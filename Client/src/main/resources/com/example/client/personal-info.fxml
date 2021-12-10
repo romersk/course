@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="469.0" prefWidth="559.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controllers.PersonalInfo">
+    <children>
+        <Button fx:id="buttToBack" layoutX="455.0" layoutY="14.0" mnemonicParsing="false" onAction="#toBack" text="Вернуться" />
+        <Button fx:id="buttToSave" layoutX="348.0" layoutY="283.0" mnemonicParsing="false" onAction="#toSave" prefHeight="41.0" prefWidth="152.0" text="Сохранить" />
+        <TextField fx:id="surname" layoutX="99.0" layoutY="123.0" prefHeight="31.0" prefWidth="152.0" promptText="Фамилия" />
+        <TextField fx:id="name" layoutX="99.0" layoutY="202.0" prefHeight="31.0" prefWidth="152.0" promptText="Имя" />
+        <TextField fx:id="category" layoutX="99.0" layoutY="275.0" prefHeight="31.0" prefWidth="152.0" promptText="Разряд" />
+        <TextField fx:id="login" layoutX="348.0" layoutY="120.0" prefHeight="31.0" prefWidth="152.0" promptText="Логин" />
+        <PasswordField fx:id="password" layoutX="348.0" layoutY="199.0" prefHeight="31.0" prefWidth="152.0" promptText="Пароль" />
+        <Label fx:id="labelForSurname" layoutX="99.0" layoutY="104.0" prefHeight="16.0" prefWidth="152.0" textFill="RED" />
+        <Label fx:id="labelForName" layoutX="99.0" layoutY="183.0" prefHeight="16.0" prefWidth="152.0" textFill="RED" />
+        <Label fx:id="labelForAddress" layoutX="99.0" layoutY="259.0" prefHeight="16.0" prefWidth="152.0" textFill="RED" />
+        <Label fx:id="labelForLogin" layoutX="348.0" layoutY="104.0" prefHeight="16.0" prefWidth="152.0" textFill="RED" />
+        <Label fx:id="labelForPass" layoutX="348.0" layoutY="183.0" prefHeight="16.0" prefWidth="152.0" textFill="RED" />
+      <Label layoutX="198.0" layoutY="40.0" text="Личная информация">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="131.0" text="Фамилия" />
+      <Label layoutX="43.0" layoutY="210.0" text="Имя" />
+      <Label layoutX="33.0" layoutY="283.0" text="Разряд" />
+      <Label layoutX="291.0" layoutY="128.0" text="Логин" />
+      <Label layoutX="287.0" layoutY="207.0" text="Пароль" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="504.0" prefWidth="657.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controllers.UserControl">
+    <children>
+        <Label layoutX="258.0" layoutY="35.0" text="Пользователи">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="buttBack" layoutX="582.0" layoutY="14.0" mnemonicParsing="false" onAction="#toBack" text="Назад" />
+        <Button fx:id="buttAdd" layoutX="42.0" layoutY="306.0" mnemonicParsing="false" onAction="#toAdd" prefHeight="34.0" prefWidth="128.0" text="Добавить" />
+        <Button fx:id="buttEdit" layoutX="194.0" layoutY="306.0" mnemonicParsing="false" onAction="#toEdit" prefHeight="34.0" prefWidth="98.0" text="Изменить" />
+        <Button fx:id="buttDelete" layoutX="321.0" layoutY="306.0" mnemonicParsing="false" onAction="#toDelete" prefHeight="34.0" prefWidth="98.0" text="Удалить" />
+        <Button fx:id="buttToFile" layoutX="439.0" layoutY="306.0" mnemonicParsing="false" onAction="#toSaveToFile" prefHeight="34.0" prefWidth="160.0" text="Файловый отчет" />
+        <TableView fx:id="table" layoutX="13.0" layoutY="88.0" prefHeight="200.0" prefWidth="635.0">
+            <columns>
+                <TableColumn fx:id="columnLogin" prefWidth="136.0" text="Логин" />
+                <TableColumn fx:id="columnPass" prefWidth="128.0" text="Пароль" />
+                <TableColumn fx:id="columnName" prefWidth="103.0" text="Имя" />
+                <TableColumn fx:id="columnSurname" prefWidth="167.0" text="Фамилия" />
+                <TableColumn fx:id="columnCategory" prefWidth="100.0" text="Разряд" />
+            </columns>
+        </TableView>
+        <TextField fx:id="searchLogin" layoutX="72.0" layoutY="439.0" prefHeight="34.0" prefWidth="171.0" />
+        <Button fx:id="buttToSearch" layoutX="267.0" layoutY="439.0" mnemonicParsing="false" onAction="#toSearch" prefHeight="34.0" prefWidth="77.0" text="Поиск" />
+        <Button fx:id="buttToRefresh" layoutX="362.0" layoutY="439.0" mnemonicParsing="false" onAction="#toRefresh" prefHeight="34.0" prefWidth="77.0" text="Вернуть" />
+        <ComboBox fx:id="combBx" layoutX="72.0" layoutY="388.0" prefHeight="34.0" prefWidth="171.0" promptText="Поле для поиска" />
+        <Label fx:id="labelForBox" layoutX="72.0" layoutY="372.0" textFill="RED" />
+        <Label fx:id="labelField" layoutX="72.0" layoutY="422.0" textFill="RED" />
+    </children>
+</AnchorPane>

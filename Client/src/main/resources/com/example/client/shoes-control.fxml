@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="489.0" prefWidth="685.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controllers.ShoesControl">
+    <children>
+        <Label layoutX="303.0" layoutY="35.0" text="Обувь">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="buttBack" layoutX="539.0" layoutY="21.0" mnemonicParsing="false" onAction="#toBack" text="Назад" />
+        <Button fx:id="buttAdd" layoutX="58.0" layoutY="342.0" mnemonicParsing="false" onAction="#toAdd" prefHeight="34.0" prefWidth="98.0" text="Добавить" />
+        <Button fx:id="buttEdit" layoutX="187.0" layoutY="342.0" mnemonicParsing="false" onAction="#toEdit" prefHeight="34.0" prefWidth="85.0" text="Изменить" />
+        <Button fx:id="buttDelete" layoutX="309.0" layoutY="342.0" mnemonicParsing="false" onAction="#toDelete" prefHeight="34.0" prefWidth="85.0" text="Удалить" />
+        <Button fx:id="buttFile" layoutX="430.0" layoutY="342.0" mnemonicParsing="false" onAction="#toFile" prefHeight="34.0" prefWidth="160.0" text="Текстовый отчет" />
+        <TableView fx:id="table" layoutX="34.0" layoutY="75.0" prefHeight="200.0" prefWidth="617.0">
+            <columns>
+                <TableColumn fx:id="columnName" prefWidth="130.0" text="Наименование" />
+                <TableColumn fx:id="columnExpenses" prefWidth="136.0" text="Расход на 1 ед." />
+                <TableColumn fx:id="columnCosts" prefWidth="150.0" text="Стоимость за 1 ед." />
+            <TableColumn fx:id="columnTime" prefWidth="200.0" text="Время на произв. 1 ед." />
+            </columns>
+        </TableView>
+        <ComboBox fx:id="combBx" layoutX="309.0" layoutY="413.0" prefHeight="34.0" prefWidth="171.0" />
+        <Label layoutX="100.0" layoutY="422.0" text="Фильрация по стоимости" />
+        <TextField fx:id="name" layoutX="14.0" layoutY="291.0" prefHeight="34.0" prefWidth="146.0" promptText="Наименование" />
+        <TextField fx:id="expenses" layoutX="176.0" layoutY="291.0" prefHeight="34.0" prefWidth="146.0" promptText="Расход" />
+        <TextField fx:id="costs" layoutX="343.0" layoutY="291.0" prefHeight="34.0" prefWidth="146.0" promptText="Стоимость" />
+        <Label fx:id="labelName" layoutX="15.0" layoutY="275.0" prefHeight="16.0" prefWidth="0.0" textFill="RED" />
+        <Label fx:id="labelGenre" layoutX="177.0" layoutY="275.0" prefHeight="16.0" prefWidth="0.0" textFill="RED" />
+        <Label fx:id="labelCount" layoutX="342.0" layoutY="275.0" prefHeight="16.0" prefWidth="0.0" textFill="RED" />
+      <TextField fx:id="time" layoutX="510.0" layoutY="291.0" prefHeight="34.0" prefWidth="146.0" promptText="Время" />
+      <Label fx:id="labelTime" layoutX="510.0" layoutY="275.0" prefHeight="16.0" prefWidth="0.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="567.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controllers.MainController">
+  <children>
+    <Button fx:id="enterButton" layoutX="53.0" layoutY="219.0" mnemonicParsing="false" onAction="#toEnter" prefHeight="37.0" prefWidth="180.0" text="Войти" />
+    <Button fx:id="registrationButton" layoutX="53.0" layoutY="320.0" mnemonicParsing="false" onAction="#toRegistration" prefHeight="37.0" prefWidth="180.0" text="Зарегистироваться" />
+    <PasswordField fx:id="password" layoutX="53.0" layoutY="155.0" prefHeight="37.0" prefWidth="180.0" promptText="Пароль" />
+    <TextField fx:id="login" layoutX="53.0" layoutY="87.0" prefHeight="40.0" prefWidth="180.0" promptText="Логин" />
+    <Label layoutX="130.0" layoutY="283.0" text="Или" />
+    <Label fx:id="toHelp" layoutX="53.0" layoutY="139.0" prefHeight="16.0" prefWidth="180.0" textFill="RED" />
+    <Label fx:id="isAccountExist" layoutX="53.0" layoutY="71.0" prefHeight="16.0" prefWidth="306.0" textFill="RED" />
+    <Label layoutX="206.0" layoutY="28.0" text="Обувная фабрика" textAlignment="CENTER">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+      <ImageView fitHeight="306.0" fitWidth="271.0" layoutX="291.0" layoutY="87.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@img/shoes.jpg" />
+         </image>
+      </ImageView>
+  </children>
+</Pane>

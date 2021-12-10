@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="415.0" prefWidth="577.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controllers.AddShoes">
+    <children>
+        <Button fx:id="buttToBack" layoutX="428.0" layoutY="14.0" mnemonicParsing="false" onAction="#toBack" prefHeight="30.0" prefWidth="135.0" text="Вернуться назад" />
+        <Label layoutX="205.0" layoutY="53.0" text="Добавление обуви">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <TextField fx:id="name" layoutX="203.0" layoutY="101.0" prefHeight="36.0" prefWidth="171.0" promptText="Наименование" />
+        <TextField fx:id="expenses" layoutX="203.0" layoutY="157.0" prefHeight="36.0" prefWidth="171.0" promptText="Расходы с 1 ед." />
+        <TextField fx:id="costs" layoutX="203.0" layoutY="217.0" prefHeight="36.0" prefWidth="171.0" promptText="Стоимость 1 ед." />
+        <Button fx:id="buttToSave" layoutX="243.0" layoutY="333.0" mnemonicParsing="false" onAction="#toSave" prefHeight="30.0" prefWidth="92.0" text="Сохранить" />
+        <Label fx:id="labelName" layoutX="203.0" layoutY="85.0" prefHeight="16.0" prefWidth="0.0" textFill="RED" />
+        <Label fx:id="labelGenre" layoutX="203.0" layoutY="141.0" prefHeight="16.0" prefWidth="0.0" textFill="RED" />
+        <Label fx:id="labelCount" layoutX="203.0" layoutY="200.0" prefHeight="16.0" prefWidth="0.0" textFill="RED" />
+      <TextField fx:id="time" layoutX="204.0" layoutY="272.0" prefHeight="36.0" prefWidth="171.0" promptText="Время на производство" />
+      <Label fx:id="labelTime" layoutX="205.0" layoutY="253.0" prefHeight="16.0" prefWidth="0.0" />
+      <Label layoutX="93.0" layoutY="111.0" text="Наименование" />
+      <Label layoutX="90.0" layoutY="167.0" text="Расходы с 1 ед." />
+      <Label layoutX="84.0" layoutY="227.0" text="Стоимость 11 ед." />
+      <Label layoutX="70.0" layoutY="274.0" text="Время на &#10;производство 1 ед.&#10;" textAlignment="RIGHT" />
+    </children>
+</AnchorPane>

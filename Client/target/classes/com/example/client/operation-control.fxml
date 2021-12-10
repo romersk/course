@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="493.0" prefWidth="798.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controllers.OperationControl">
+   <children>
+      <Button fx:id="buttBack" layoutX="649.0" layoutY="14.0" mnemonicParsing="false" onAction="#toBack" text="Вернуться назад" />
+      <TableView fx:id="table" layoutX="16.0" layoutY="80.0" prefHeight="300.0" prefWidth="764.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="79.0" text="№ &#10;операции&#10;" />
+          <TableColumn fx:id="lastAndFirstName" prefWidth="173.0" text="Фамилия и имя &#10;работника&#10;" />
+            <TableColumn fx:id="createdAt" prefWidth="109.0" text="Дата&#10;отчетности&#10;" />
+            <TableColumn fx:id="timeManufacture" prefWidth="139.0" text="Время,&#10;затраченное на&#10;произв.&#10;" />
+            <TableColumn fx:id="listShoes" prefWidth="172.0" text="Произведенная&#10;обувь&#10;" />
+            <TableColumn fx:id="profit" prefWidth="91.0" text="Прибыль" />
+        </columns>
+      </TableView>
+      <Label layoutX="277.0" layoutY="38.0" text="Отчености рабочих о работе">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttGraph" layoutX="520.0" layoutY="404.0" mnemonicParsing="false" onAction="#toGraph" prefHeight="38.0" prefWidth="190.0" text="Графическая отчетность" />
+      <Button fx:id="buttFile" layoutX="87.0" layoutY="404.0" mnemonicParsing="false" onAction="#toFile" prefHeight="38.0" prefWidth="190.0" text="Текстовая отчетность" />
+   </children>
+</AnchorPane>

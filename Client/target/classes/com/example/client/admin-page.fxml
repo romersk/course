@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="514.0" prefWidth="536.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controllers.AdminPage">
+    <children>
+        <Button fx:id="buttBack" layoutX="377.0" layoutY="14.0" mnemonicParsing="false" onAction="#toBack" prefHeight="34.0" prefWidth="145.0" text="Вернуться назад" />
+        <Button fx:id="buttPersonalInfo" layoutX="106.0" layoutY="152.0" mnemonicParsing="false" onAction="#toShowPersonalInfo" prefHeight="46.0" prefWidth="325.0" text="Управление персональной информации" />
+        <Button fx:id="buttDataUsers" layoutX="106.0" layoutY="277.0" mnemonicParsing="false" onAction="#toShowData" prefHeight="46.0" prefWidth="325.0" text="Работа с данными пользователей" />
+        <Button fx:id="buttBooks" layoutX="106.0" layoutY="213.0" mnemonicParsing="false" onAction="#toManupWork" prefHeight="46.0" prefWidth="325.0" text="Администрирование обуви" />
+        <Button fx:id="buttCalc" layoutX="106.0" layoutY="341.0" mnemonicParsing="false" onAction="#toCalculate" prefHeight="46.0" prefWidth="325.0" text="Расчет общих расходов и прибыли" />
+        <Label layoutX="142.0" layoutY="63.0" text="Меню администратора">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="History" layoutX="106.0" layoutY="406.0" mnemonicParsing="false" onAction="#toShowHistory" prefHeight="46.0" prefWidth="325.0" text="Просмотр операций сотрудников" />
+    </children>
+</AnchorPane>
